@@ -15,7 +15,13 @@ ampulla_obj <- Load10X_Spatial(
   assay = "Spatial", slice = "slice1", filter.matrix = TRUE, to.upper = FALSE
 )
 ampulla_obj <- SCTransform(ampulla_obj, assay = "Spatial")
-VariableFeatures(ampulla_obj)
+# An object of class Seurat 
+# 36601 features across 1870 samples within 1 assay 
+# Active assay: Spatial (36601 features, 0 variable features)
+#  1 layer present: counts
+#  1 image present: slice1
+
+# VariableFeatures(ampulla_obj)
 
 # File 1: Spatial Coordinates of barcodes ----------
 coordinates_df <- ampulla_obj@images[["slice1"]]@coordinates[, c("row", "col")]
