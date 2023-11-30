@@ -1,5 +1,5 @@
 # Readme
-This repository contains a simplified dataset as a practice of data analysis. The data is based on a Visium slide of Ampulla but for simplicity we only provide the highly variable genes and the spatial coordinates of the spots. The data files are located in the data folder.
+This repository contains a simplified dataset as a practice of data analysis. The data is based on a Visium slide of Ampulla but for simplicity we only provide the highly variable genes and the spatial coordinates of the spots. The data files are located in the data folder. Genes are ranked by the variance of residuals from SCTransform.
 
 - `data/ampulla_coordinates.csv`: Spatial coordinates for each spot.
 - `data/ampulla_raw_counts.csv`: Raw gene count data for each spot.
